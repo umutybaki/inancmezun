@@ -9,9 +9,9 @@ const board = kurulData as BoardData
 
 const missions = [
   {
-    title: 'Bağ Kurmak',
+    title: 'Autodeploy çalışıyor',
     description:
-      'Yıllar ve şehirler ötesinde dağılmış mezunlarımızı tek bir çatı altında buluşturmak.',
+      'Bu string github actions tarafından gönderildi.',
   },
   {
     title: 'Hatırlamak ve Hatırlatmak',
