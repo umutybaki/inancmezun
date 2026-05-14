@@ -9,6 +9,7 @@
     "deploy": "sst deploy --stage production"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
@@ -29,8 +30,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "sst": "latest",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "sst": "latest"
+    "typescript": "^5"
   }
 }
