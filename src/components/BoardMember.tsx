@@ -25,9 +25,9 @@ export function BoardMember({ member }: BoardMemberProps) {
       }}
     >
       {/* Avatar */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-6">
         {member.foto ? (
-          <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+          <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
             <Image
               src={member.foto}
               alt={member.ad}
@@ -38,7 +38,7 @@ export function BoardMember({ member }: BoardMemberProps) {
           </div>
         ) : (
           <div
-            className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-lg font-bold"
+            className="w-16 h-16 rounded-full flex items-center justify-center shrink-0 text-lg font-bold"
             style={{
               backgroundColor: 'var(--color-red)',
               color: 'var(--color-cream)',
