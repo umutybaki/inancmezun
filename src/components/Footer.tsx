@@ -39,11 +39,9 @@ export function Footer() {
             >
               Keşfet
             </h3>
-            <FooterLink href="/hakkimizda">Hakkımızda</FooterLink>
             <FooterLink href="/tarihce">Tarihçe</FooterLink>
             <FooterLink href="/duyurular">Duyurular</FooterLink>
             <FooterLink href="/blog">Blog</FooterLink>
-            <FooterLink href="/destek">Destek Ol</FooterLink>
           </div>
 
           {/* Col 3: Takip et */}
@@ -54,9 +52,8 @@ export function Footer() {
             >
               Takip Et
             </h3>
-            <FooterExternalLink href="https://facebook.com">Facebook</FooterExternalLink>
-            <FooterExternalLink href="https://instagram.com">Instagram</FooterExternalLink>
-            <FooterExternalLink href="https://linkedin.com">LinkedIn</FooterExternalLink>
+            <FooterExternalLink href="https://instagram.com/inancmezun">Instagram</FooterExternalLink>
+            <FooterExternalLink href="https://linkedin.com/company/inancmezun">LinkedIn</FooterExternalLink>
           </div>
 
           {/* Col 4: İletişim */}

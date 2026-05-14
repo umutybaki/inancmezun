@@ -46,7 +46,7 @@ export function HeroQuote() {
         {/* CTAs */}
         <div className="flex flex-wrap items-center gap-4">
           <Link
-            href="/destek"
+            href="/#destek"
             className="inline-flex items-center px-6 py-3 rounded text-sm font-semibold transition-colors duration-150 hover:opacity-90"
             style={{
               backgroundColor: 'var(--color-red)',
@@ -56,7 +56,7 @@ export function HeroQuote() {
             Bize katıl
           </Link>
           <Link
-            href="/hakkimizda"
+            href="/#hakkimizda"
             className="text-sm font-medium border-b transition-colors duration-150 hover:opacity-70"
             style={{
               color: 'var(--color-ink)',

@@ -2,13 +2,15 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { label: 'Hakkımızda', href: '/hakkimizda' },
+  { label: 'Hakkımızda', href: '/#hakkimizda' },
+  { label: 'Destek Ol', href: '/#destek' },
+  { label: 'İletişim', href: '/iletisim' },
   { label: 'Duyurular', href: '/duyurular' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Destek Ol', href: '/destek' },
 ]
 
 export function Header() {
@@ -20,27 +22,25 @@ export function Header() {
       className="relative z-50"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-3"
             onClick={() => setMobileOpen(false)}
           >
-            {/* Yellow accent circle */}
-            <span
-              className="w-2.5 h-2.5 rounded-full flex-shrink-0"
-              style={{ backgroundColor: 'var(--color-yellow)' }}
+            <Image
+              src="/tevinanc_logo.png"
+              alt="TEV İnanç Lisesi logosu"
+              width={84}
+              height={84}
+              className="object-contain"
             />
             <span
-              className="text-xl font-bold tracking-wide"
-              style={{
-                fontFamily: 'var(--font-serif)',
-                color: 'var(--color-cream)',
-                letterSpacing: '0.05em',
-              }}
+              className="text-base font-bold leading-tight"
+              style={{ color: 'var(--color-cream)' }}
             >
-              İLMD
+              Mezunlar Derneği
             </span>
           </Link>
 
@@ -57,32 +57,6 @@ export function Header() {
               </Link>
             ))}
           </nav>
-
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center">
-            <Link
-              href="/iletisim"
-              className="text-sm font-medium px-4 py-1.5 rounded border transition-colors duration-150"
-              style={{
-                color: 'var(--color-cream)',
-                borderColor: 'var(--color-yellow)',
-              }}
-              onMouseEnter={(e) => {
-                ;(e.currentTarget as HTMLAnchorElement).style.backgroundColor =
-                  'var(--color-yellow)'
-                ;(e.currentTarget as HTMLAnchorElement).style.color =
-                  'var(--color-ink)'
-              }}
-              onMouseLeave={(e) => {
-                ;(e.currentTarget as HTMLAnchorElement).style.backgroundColor =
-                  'transparent'
-                ;(e.currentTarget as HTMLAnchorElement).style.color =
-                  'var(--color-cream)'
-              }}
-            >
-              İletişim
-            </Link>
-          </div>
 
           {/* Mobile hamburger */}
           <button
@@ -117,14 +91,6 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/iletisim"
-              className="text-sm font-medium py-2.5 mt-1"
-              style={{ color: 'var(--color-yellow)' }}
-              onClick={() => setMobileOpen(false)}
-            >
-              İletişim →
-            </Link>
           </nav>
         </div>
       )}
