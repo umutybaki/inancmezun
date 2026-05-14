@@ -35,7 +35,7 @@ export default async function BlogPage() {
             </p>
             <a
               href="mailto:inancmezun@gmail.com?subject=Blog%20Yazısı%20Göndermek%20İstiyorum"
-              className="text-sm font-semibold border-b pb-0.5 flex-shrink-0"
+              className="text-sm font-semibold border-b pb-0.5 shrink-0"
               style={{
                 color: 'var(--color-red)',
                 borderColor: 'var(--color-red)',
